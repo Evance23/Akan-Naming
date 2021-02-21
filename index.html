@@ -24,13 +24,26 @@ link rel=”stylesheet” href=”https://maxcdn.bootstrapcdn.com/bootstrap/4.0.
       <h2>Check Your Birth-Day</h2>
       
       <form>
-          <input type="date" name="dob" id="dob">
-          <input type="radio" name="male" id="male">Male
-          <input type="radio" name="female" id="female">Female
+          <select name="day" id="day">
+              <option value="sunday">Sunday</option>
+              <option value="monday">Monday</option>
+              <option value="tuesday">Tuesday</option>
+              <option value="wednesday">Wednesday</option>
+              <option value="thursdy">Thursday</option>
+              <option value="friday">Friday</option>
+              <option value="saturday">Saturday</option>
+          </select>
+          
+          <select name="gender" id="gender">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+          </select>
           <input type="button" value="Submit">
       </form>
 <script>
- var people = [];
+ var male = {'sunday':'Kwasi', 'monday':'Kwadwo', 'tuesday':'Kwabena', 'wednesday':'Kwaku', 'thursday':'Yaw', 'friday':'Kofi', 'saturday':'Kwame'};
+ var optionMale = document.getElementById('male').value;
+ var optionFemale = document.getElementById('female').value;
 </script>
 <script src="project2/script.js"></script>
 </body>
