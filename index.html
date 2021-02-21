@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="style.css" rel="Stylesheet"> 
-link rel=”stylesheet” href=”https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css”rel=”nofollow” integrity=”sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm” crossorigin=”anonymous” 
+<link rel=”stylesheet” href=”https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css”rel=”nofollow” integrity=”sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm” crossorigin=”anonymous”>datedatedate
     <title>The Akan</title>
 </head>
 <body>
@@ -24,32 +24,50 @@ link rel=”stylesheet” href=”https://maxcdn.bootstrapcdn.com/bootstrap/4.0.
       <h2>Check Your Birth-Day</h2>
       
       <form>
-          <select name="day" id="day">
-              <option value="sunday">Sunday</option>
-              <option value="monday">Monday</option>
-              <option value="tuesday">Tuesday</option>
-              <option value="wednesday">Wednesday</option>
-              <option value="thursdy">Thursday</option>
-              <option value="friday">Friday</option>
-              <option value="saturday">Saturday</option>
-          </select>
+          <input type="date" name="date" id="date">
           
           <select name="gender" id="gender">
               <option value="male">Male</option>
               <option value="female">Female</option>
           </select>
-          <input type="button" value="Submit">
+          <input type="button" onclick="myFunction()" value="Submit">
       </form>
 <script>
- var male = {'sunday':'Kwasi', 'monday':'Kwadwo', 'tuesday':'Kwabena', 'wednesday':'Kwaku', 'thursday':'Yaw', 'friday':'Kofi', 'saturday':'Kwame'};
- var gender = document.getElementById('gender').value;
- var day = document.getElementById('day').value;
+    function myFunction() {
+        var gender = document.getElementById('gender').value;
+        var date = document.getElementById('date').value;
 
- if (gender === 'male') {
-     alert(male.day);
- } else {
-     alert(female.day);
- }
+        if (gender === 'male') {
+
+            var d = new Date(date);
+            var s = d.getDay();
+
+            if (s == 0 ) {
+                alert('Kwasi');
+            }
+            else if (s == 1 ) {
+                alert('Kwadwo');
+            }
+            else if (s == 2 ) {
+                alert('Kwabena');
+            }
+            else if (s == 3 ) {
+                alert('Kwaku');
+            }
+            else if (s == 4 ) {
+                alert('Yaw');
+            }
+            else if (s == 5 ) {
+                alert('Kofi');
+            }
+            else if (s == 6 ) {
+                alert('Kwame');
+            }
+        } else {
+            alert(female.day);
+        }
+    }
+ 
 </script>
 <script src="project2/script.js"></script>
 </body>
