@@ -42,8 +42,14 @@ link rel=”stylesheet” href=”https://maxcdn.bootstrapcdn.com/bootstrap/4.0.
       </form>
 <script>
  var male = {'sunday':'Kwasi', 'monday':'Kwadwo', 'tuesday':'Kwabena', 'wednesday':'Kwaku', 'thursday':'Yaw', 'friday':'Kofi', 'saturday':'Kwame'};
- var optionMale = document.getElementById('male').value;
- var optionFemale = document.getElementById('female').value;
+ var gender = document.getElementById('gender').value;
+ var day = document.getElementById('day').value;
+
+ if (gender === 'male') {
+     alert(male.day);
+ } else {
+     alert(female.day);
+ }
 </script>
 <script src="project2/script.js"></script>
 </body>
