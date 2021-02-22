@@ -1,0 +1,26 @@
+# {The Akan Way
+#### Description
+Thi is a platform that enables individuals of AKAn decent to check the meaning of their days of birth. 
+The Akan naming syetm is tied to the  day of birth. 
+#### Author
+[Evance Barracks](https://github.com/Evance23)
+## Description
+{The Aplication allows indviduals to key in their dates
+of birth and then they can tell their Akan name. the most important consideration is the validity of the date of birth. the system is able to  detect wrong date that do not confirm to the calendar limits
+Also, while the application is built for AKAn cultural name, it also works for non-Akan indviduals who may want to check their possible Akan names}
+##Techonologies
+ Javascript
+ CSS
+ HTML
+## Setup/Installation Requirements
+* Landing page
+* Radio buttons
+* Simple language
+* Akan history
+
+## Known Bugs
+{The date button sometimes takes long toload especially when the syetm is overloaded with several entries. 
+Consider updgrading of reduing the number of entries at a given time}
+
+## Support and contact details
+### License
