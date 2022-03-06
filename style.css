@@ -1,6 +1,9 @@
 html {
-    border :5px solid brown;
+
     background: beige;
+    background-image: url(./images/bg1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
     
 }
 
@@ -19,4 +22,13 @@ body {
     width: 100%;
     background-color: black;
     color: white;
-    text-align: center;
+   
+ text-align: center;
+}
+
+.mapics {
+    justify-content: space-between;
+    display: flex;
+    margin:10px 0 10px 0;
+
+}
